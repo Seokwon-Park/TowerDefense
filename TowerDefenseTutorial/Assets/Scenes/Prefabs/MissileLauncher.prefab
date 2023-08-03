@@ -279,9 +279,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 30
+  bulletPrefab: {fileID: 5216608457140143454, guid: d361f1a296e04454eb01720a2e9d0bb5, type: 3}
   fireRate: 0.25
+  useLaser: 0
+  damageOverTime: 30
+  slowPercent: 0.5
+  lineRenderer: {fileID: 0}
+  impactEffect: {fileID: 0}
+  impactLight: {fileID: 0}
   enemyTag: Enemy
   partToRotate: {fileID: 7233780367001485716}
   turnSpeed: 10
-  bulletPrefab: {fileID: 5216608457140143454, guid: d361f1a296e04454eb01720a2e9d0bb5, type: 3}
   firePoint: {fileID: 8158384339937206260}

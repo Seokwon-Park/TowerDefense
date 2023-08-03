@@ -35,16 +35,14 @@ public class Node : MonoBehaviour
             return;
         }
 
-        if (!buildManager.CanBuild)
+        if(turret != null)
         {
+            buildManager.SelectNode(this);
             return;
         }
 
-        if(turret != null)
-        {
-            Debug.Log("Can't build there! - TODO: Display on screen.");
+        if (!buildManager.CanBuild)
             return;
-        }
 
         buildManager.BuildTurretOn(this);
     }
