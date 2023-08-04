@@ -6287,13 +6287,13 @@ MonoBehaviour:
   missileLauncher:
     prefab: {fileID: 8830071295476867570, guid: 4a6b0dde04891f843b365f53a00c03dc, type: 3}
     cost: 250
-    upgradedPrefab: {fileID: 0}
-    upgradeCost: 0
+    upgradedPrefab: {fileID: 8830071295476867570, guid: 3d7cba72baf5ad14c933e10964edea33, type: 3}
+    upgradeCost: 100
   laserBeamer:
     prefab: {fileID: 2540545235205492099, guid: afdcfab5d2868ac459888d78fc791487, type: 3}
     cost: 350
-    upgradedPrefab: {fileID: 0}
-    upgradeCost: 0
+    upgradedPrefab: {fileID: 2540545235205492099, guid: e8e6e6d047f6cc943a91fac9149f57ee, type: 3}
+    upgradeCost: 200
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -10114,7 +10114,7 @@ GameObject:
   - component: {fileID: 1172470109}
   - component: {fileID: 1172470108}
   m_Layer: 0
-  m_Name: Cost
+  m_Name: Amount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10159,7 +10159,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '$50
+  m_text: '$125
 
 '
   m_isRightToLeft: 0
@@ -10664,7 +10664,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1954566232}
         m_TargetAssemblyTypeName: NodeUI, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: Sell
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12149,6 +12149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildEffect: {fileID: 3052683718836608829, guid: c415395003dc0d24d801ed4ccb6e15a5, type: 3}
+  sellEffect: {fileID: 9040189656403071070, guid: f4f8a93e3e0c15c4ba060964fe411964, type: 3}
   nodeUI: {fileID: 1954566232}
 --- !u!114 &1381793467
 MonoBehaviour:
@@ -12162,8 +12163,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2db456fb3013e9446a2202ecca4446f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 400
-  startLives: 1
+  startMoney: 10000
+  startLives: 20
 --- !u!114 &1381793468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17120,6 +17121,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ui: {fileID: 879852087}
   upgradeCost: {fileID: 1825536761}
+  upgradeButton: {fileID: 1565789569}
+  sellAmount: {fileID: 1172470108}
 --- !u!1001 &1961790920
 PrefabInstance:
   m_ObjectHideFlags: 0

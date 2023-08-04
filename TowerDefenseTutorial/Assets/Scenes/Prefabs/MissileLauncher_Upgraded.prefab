@@ -92,8 +92,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 10e5e53a27d39194998b6d59f7e67a24, type: 2}
   - {fileID: 2100000, guid: 533c478b3e30c9e46b037a231e852c5e, type: 2}
+  - {fileID: 2100000, guid: 10e5e53a27d39194998b6d59f7e67a24, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -259,7 +259,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7233780367001485716}
@@ -278,9 +278,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ed3ce5d6b33bca49b395f20778ec4f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 30
+  range: 40
   bulletPrefab: {fileID: 5216608457140143454, guid: d361f1a296e04454eb01720a2e9d0bb5, type: 3}
-  fireRate: 0.25
+  fireRate: 0.4
   useLaser: 0
   damageOverTime: 30
   slowPercent: 0.5
