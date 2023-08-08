@@ -3726,7 +3726,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bd309ded1a02f347bfb9cdf2da6c55e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roundsText: {fileID: 1274302759}
   menuSceneName: MainMenu
   sceneFader: {fileID: 1252138427}
 --- !u!95 &360475191
@@ -12847,23 +12846,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - enemy: {fileID: 8702603022871270947, guid: d2665c78d5753c948ae8cc3abf45ae8e, type: 3}
-    count: 1
+    count: 20
     rate: 2
   - enemy: {fileID: 8702603022871270947, guid: d2665c78d5753c948ae8cc3abf45ae8e, type: 3}
-    count: 2
+    count: 15
     rate: 2
   - enemy: {fileID: 8702603022871270947, guid: d2665c78d5753c948ae8cc3abf45ae8e, type: 3}
     count: 5
     rate: 2
   - enemy: {fileID: 8702603022871270947, guid: aa65a1a06d2be9249b346af37d5dc918, type: 3}
-    count: 3
+    count: 30
     rate: 1
   - enemy: {fileID: 8702603022871270947, guid: fec09b3f6fb872547b2a7963ee3eb016, type: 3}
-    count: 10
+    count: 20
     rate: 3
   spawnPoint: {fileID: 217277833}
   timeBetweenWaves: 3
   waveCountdownText: {fileID: 279148481}
+  gameManager: {fileID: 1381793468}
 --- !u!4 &1381793465
 Transform:
   m_ObjectHideFlags: 0
@@ -12906,7 +12906,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2db456fb3013e9446a2202ecca4446f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 10000
+  startMoney: 500
   startLives: 15
 --- !u!114 &1381793468
 MonoBehaviour:
@@ -12921,6 +12921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 360475188}
+  completeLevelUI: {fileID: 0}
 --- !u!114 &1381793469
 MonoBehaviour:
   m_ObjectHideFlags: 0
